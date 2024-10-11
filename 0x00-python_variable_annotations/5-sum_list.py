@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """new module imitated from variable annotaion"""
 
-
 from typing import List
+
+
 def sum_list(input_list: List[float]) -> float:
     """accpets lists of float and returns their sum
         Args:
