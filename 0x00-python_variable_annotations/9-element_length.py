@@ -1,4 +1,4 @@
-#!/usr/bin/env python3 
+#!/usr/bin/env python3
 """duck type annotation in python"""
 
 from typing import Sequence, List, Tuple, Iterable
