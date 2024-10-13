@@ -5,7 +5,7 @@ any necessary changes."""
 from typing import Tuple, Any, List
 
 
-def zoom_array(lst: Any, factor: int = 2) -> List:
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """used mypy to validate any issues"""
     zoomed_in: Any = [
         item for item in lst
