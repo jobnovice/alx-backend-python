@@ -5,7 +5,7 @@ import random
 import time
 
 
-async def wait_random(max_delay=10):
+async def wait_random(max_delay: int = 10) -> float:
     """minimalstic implementaion of concurrency"""
     start_time = time.time()
     await asyncio.sleep(random.uniform(0, max_delay))
