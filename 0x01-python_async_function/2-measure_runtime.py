@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """Measure the runtime of concurrent coroutines"""
 import time
 import asyncio
