@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Asynchronus comprehension defined"""
-from typing import AsyncIterator
+from typing import Generator
 import asyncio
 import random
 
 
-async def async_generator() -> AsyncIterator[float]:
+async def async_generator() -> Generator[float, None, None]
     """Async Generator that generates random number b/n 1and10"""
     for _ in range(10):
         await asyncio.sleep(1)
