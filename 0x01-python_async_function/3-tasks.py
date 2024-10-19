@@ -1,4 +1,4 @@
-#!/usr/bin/envpython3
+#!/usr/bin/env python3
 """Write a function use the regular functiosyntax to do this)"""
 import asyncio
 wait_random = __import__('0-basic_async_syntax').wait_random
