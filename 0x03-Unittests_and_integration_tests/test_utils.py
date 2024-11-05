@@ -9,6 +9,7 @@ from typing import Mapping, Sequence, Any
 from parameterized import parameterized
 from unittest.mock import patch
 
+
 class TestAccessNestedMap(unittest.TestCase):
     """
     Tests the access_nested_map function
@@ -46,6 +47,7 @@ class TestAccessNestedMap(unittest.TestCase):
         with self.assertRaises(Exception):
             access_nested_map(nested_map, path)
 
+
 class TestGetJson(unittest.TestCase):
     """testing getjson method by creating a mock object"""
     @parameterized.expand([
@@ -53,7 +55,7 @@ class TestGetJson(unittest.TestCase):
         ("http://holberton.io", {"payload": False})
         ])
     @patch("requests.get")
-    def test_get_json(self, test_url, test_payload):
+    def test_get_json(self, test_url, test_payload, mock_requests_get):
         """test the get_json by patching the actual method"""
         mock_requests_get.return_value.json.return_value = test_payload
         result = get_json(test_url)
